@@ -3,11 +3,14 @@ pip>=9
 setuptools>=26
 twine
 wheel>=0.29
+python-dateutil==1.5
 
 # data science
 numpy
 pandas
 scikit-learn
+
+matplotlib
 
 # tests/linter
 black
@@ -27,3 +30,6 @@ six>=1.14
 joblib
 memoized-property
 termcolor
+
+#front end
+streamlit

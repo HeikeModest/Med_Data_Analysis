@@ -13,7 +13,6 @@ st.set_page_config(
 
 
 
-<<<<<<< HEAD
 '''# Cancer research- immune cells
 ### The app predicts if an patient will react to the Cetuxima cancer treatment based on concentration of immune cells (obatined from the gene expression of the patient)
 '''
@@ -29,18 +28,6 @@ with col2:
   imun_neutr = st.number_input('Neutrophils', value=0.004522)
   imun_eosi = st.number_input('Eosinophils', value=0.0)
  
-=======
-'''
-# Cancer research- imune cells
-### The app predicts if an patient will react to the Cetuxima cancer treatment based on concentration of immune cells (obatined from the gene expression of the patient)
-'''
-
-#Imune cells input, 
-imun_M1 = st.number_input('Macrophages M1', value=0.018321)
-imun_M2 = st.number_input('Macrophages M2', value=0.014802)
-imun_neutr = st.number_input('Neutrophils', value=0.004522)
-imun_eosi = st.number_input('Eosinophils', value=0.0)
->>>>>>> beff8d51e2cdebe997efff7f44aef5943edf4e01
 
 # Input model type
 model_dict={'Logistic_Regression': 'logistic', 'Linear_svc':'linear_svc',
@@ -75,8 +62,8 @@ prediction = response.json()
 
 if prediction==1:
   st.write('The prediction is thet the patient react to the treatment ')
-  st.image('raw_data/images/skin_rash.jpg')
+  st.image('images/skin_rash.png')
 else:
   st.write('The prediction is thet the patient will not react to the treatment ')
-  st.image('raw_data/images/no_rash.png')
+  st.image('images/no_rash.png')
 
